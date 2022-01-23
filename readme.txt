@@ -1,3 +1,2 @@
-Talk
-
-A Web Based Chat Application
+Talkie
+Web Based Chat Application
