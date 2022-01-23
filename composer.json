@@ -1,0 +1,17 @@
+{
+    "name": "chat/shadow_chat",
+    "type": "project",
+    "authors": [{
+        "name": "Maro ",
+        "email": "nerdmaro@gmail.com"
+    }],
+    "require": {
+            "php": ">=8.0.2",
+            "cboden/ratchet": "^0.4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "shadow_chat\\": "src"
+        }
+    }
+}
