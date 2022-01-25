@@ -20,6 +20,9 @@ class ChatArchitecture implements MessageComponentInterface{
         $this->users->detach($conn);
     }
     public function onMessage(ConnectionInterface $from, $msg){
+        if($msg == 'ping'){
+            return;
+        }
         echo "received '$msg' from user {$from->remoteAddress}\n";
         foreach($this->users as $user) {
             if($user != $from){

@@ -1,5 +1,5 @@
 //here a connecton instance of a websocket connection is created
-let connect = new WebSocket("ws://localhost:8080/create");
+let connect = new WebSocket("wss://localhost:8080/create");
 
 //handles message received and populates field using Jquery
 let appendMessage = function (message, sender) {
@@ -11,6 +11,9 @@ let appendMessage = function (message, sender) {
 }
 connect.onOpen = function(){
     console.log('connection created');
+    setInterval(function () {
+        connect.send('ping');
+    }, 60000);
 }
 
 // message is logged here
@@ -19,8 +22,13 @@ connect.onmessage = function (event){
     appendMessage(event.data, false);
 }
 
+//Reconnect if connection is closed abruptly
 connect.onclose = function(){
-    console.log('connection closed');
+    console.error(e);
+    clearInterval();
+    setInterval(function(){
+        connect = new WebSocket('wss://localhost:8080/create');
+    }, 5000);
 }
 
 
