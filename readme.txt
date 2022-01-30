@@ -1,1 +1,2 @@
-This is Talkie
+Talkie
+Web Based Chat Application
