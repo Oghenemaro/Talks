@@ -1,0 +1,8 @@
+body{
+    padding: 0px;
+    background-color: #0c2d48;
+}
+#contentBox {
+    height: 25em;
+    /* width: 100%; */
+}
