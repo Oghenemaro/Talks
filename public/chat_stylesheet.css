@@ -1,8 +1,26 @@
 body{
-    padding: 0px;
     background-color: #0c2d48;
+    overflow: hidden;
+    color: white;
 }
+
+.container-fluid{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 #contentBox {
-    height: 25em;
-    /* width: 100%; */
+    height: 50vmax;
+    margin: 0px;
+    padding: 0px;
+}
+#content{
+    height: 80vh;
+    margin: 0px;
+    
+}
+
+#controls{
+    height: 10vh;
+    margin: 0px;
 }
