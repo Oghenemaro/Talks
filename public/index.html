@@ -7,13 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="chatstyle.css">    
+    <link rel="stylesheet" href="chat_style.css">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid" >
         <div class="row" id="headerSect">
-            <div class="col-md-4 contactHead">Header Sect 1</div>
-            <div class="col-sm-12 col-md-8">Header Sect 2</div>
+            <div class="col-sm-4 col-md-4 contactHead">Header Sect 1</div>
+            <div class="col-sm-6 col-md-6"><img src="images/avatar.png" alt="Profile"></div>
+            <div class="col-sm-2 col-md-2 px-4 py-3">
+                <span class="material-icons settings">settings</span>
+                <span class="material-icons settings">view_headline</span>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-4" id="contacts" style="color: black;">Contact Sect</div>
@@ -22,7 +27,7 @@
                     <div id="received"></div>
                 </div>
                 <div class="col-sm-12 p-2" id="controls">
-                    <div class="input-group">
+                    <div class="input-group mt-1 ml-3">
                         <div class="col-sm-10">
                             <input class="form-control" type="text" placeholder="Enter message" id="message" />
                         </div>
