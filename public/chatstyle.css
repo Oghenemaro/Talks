@@ -1,5 +1,4 @@
 body{
-    background-color: #0c2d48;
     overflow: hidden;
     color: white;
 }
@@ -9,19 +8,34 @@ body{
     margin-left: 0px;
 }
 
+#headerSect{
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #d3d3d3;
+    height: 10vh;
+}
+
+.contactHead{
+    border-right: 1px solid white;
+    z-index: 20;
+}
+
 #contentBox {
-    height: 50vmax;
+    height: 100vmax;
     margin: 0px;
     padding: 0px;
 }
 #content{
     height: 80vh;
     margin: 0px;
-    
+    background-color: #2f4f4f;
 }
 
 #controls{
     height: 10vh;
     margin: 0px;
     background-color: #d3d3d3;
+}
+
+#contacts{
+    background-color: #ffff;
 }
