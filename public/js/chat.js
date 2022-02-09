@@ -4,9 +4,9 @@ var connect = new WebSocket("ws://localhost:8080/create");
 //handles message received and populates field using Jquery
 var appendMessage = function (message, sender) {
     var status = sender ? 'Sent at' : 'Received at';
-    var contentBox = $('<div class="msg">' + status + ' <span class="date"></span>: <span class="content"></span> </div>');
+    var contentBox = $('<div class="msg_box"><div class="msg_content"><span class="msg"></span><span class="date"></span></div> </div>');
     contentBox.find('.date').text(new Date().toLocaleTimeString());
-    contentBox.find('.content').text(message);
+    contentBox.find('.msg').text(message);
     $('#received').prepend(contentBox);
 }
 connect.onOpen = function(){

@@ -1,0 +1,96 @@
+*::before *::after{
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background-color: #fff5ee;
+    color: #fffafa;
+}
+
+.container-fluid{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* header related components */
+#headerSect{
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #d3d3d3;
+    height: 10vh;
+}
+
+.contactHead{
+    border-right: 1px solid white;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid red; */
+}
+
+.material-icons.settings{
+    font-size: 30px;
+    color: #0096C7;
+    margin-left: 45px;
+}
+
+/* message related components */
+#contentBox {
+    height: 100vmax;
+    margin: 0px;
+    padding: 0px;
+}
+#content{
+    height: 80vh;
+    margin: 0px;
+    background-color: #2f4f4f;
+    overflow-y: scroll;
+}
+
+#controls{
+    height: 10vh;
+    margin: 0px;
+    background-color: #d3d3d3;
+}
+#received{
+    /* border: 1px solid green; */
+}
+.msg_box{
+    /* border: 1px solid red; */
+    padding: 3px;
+    width: 80vh;
+}
+.msg_content{
+    width:fit-content;
+    height: fit-content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border-bottom-left-radius: 20px; */
+    background-color: #2e8b57;
+    padding: 5px;
+}
+.msg{
+    margin-right: 20px;
+}
+.date{
+    font-size: 8px;
+}
+/* contacts related components */
+#contacts{
+    background-color: black;
+}
+
+.contactDetails{
+    height: 70px;
+    margin-top: 20px;
+    border-bottom: 1px dotted #2f4f4f;
+}
+
+h5{
+    padding-left: 0;
+    padding-top: 10px;
+    color: #2f4f4f;
+}
