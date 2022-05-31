@@ -25,7 +25,7 @@ class ChatArchitecture implements MessageComponentInterface{
 
     //store message and send to user whose address is different from sender
     public function onMessage(ConnectionInterface $from, $msg){
-        if($msg == 'ping'){
+        if($msg === 'ping'){
             return;
         }
         echo "received '$msg' from user {$from->remoteAddress}\n";

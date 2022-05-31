@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "shadow_chat\\": "src"
+            "shadow_chat\\": ["src", "db"]
         }
     }
 }

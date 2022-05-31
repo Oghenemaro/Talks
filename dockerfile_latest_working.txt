@@ -1,6 +1,4 @@
-# FROM php:8.0-apache
-
-FROM php:8.0
+FROM php:8.0-apache
 
 RUN echo "deb http://ftp.de.debian.org/debian buster main" >> /etc/apt/sources.list
 
@@ -12,9 +10,6 @@ RUN docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql
 
 RUN docker-php-ext-install pdo pdo_pgsql pgsql
 
-# COPY * /var/www/html/
+
+COPY * /var/www/html/
 # CMD ["/usr/local/bin/php", "server.php"]
-
-WORKDIR /chat/src
-
-CMD ["/usr/local/bin/php", "server.php"]

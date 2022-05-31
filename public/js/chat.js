@@ -4,7 +4,6 @@ let connect = new WebSocket("ws://localhost:8080/create");
 //handles message received and populates field using Jquery
 let appendMessage = function (message, sender) {
     let status = sender ? 'Sent at' : 'Received at';
-    console.log(status);
     let owner = $('<div class="msg_box"><div class="msg_content msg_content_owner"><span class="msg"></span><span class="date"></span></div> </div>');
     let recepient = $('<div class="msg_box msg_box_recipient"><div class="msg_content msg_content_recepient"><span class="msg"></span><span class="date"></span></div> </div>');
     let msgSender = (status === 'Sent at') ? owner : recepient;
